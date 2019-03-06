@@ -1,4 +1,6 @@
-## Design/Setting Up
+# Roadmap
+
+## Design/Setting Up  [Current phase]
 - [x] Explore different ways to provide type information in JavaScript programs.
 - [x] Describe high-level goals, motivation and use cases.
 - [x] Create a high-level design.

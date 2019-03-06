@@ -15,5 +15,5 @@
 - **US-MVP 7**: As a JavaScript developer wanting to experiment with WebAssembly, I want to be able to output WebAssembly text format for learning more about how WebAssembly works.
 - **US-MVP 8**: As a package maintainer, I want to migrate my code base to TypeScript based on JSDoc comments using the JSDoc transformer.
 - **US-MVP 9**: As a library maintainer, I want to automatically generate a TypeScript definition file based on JSDoc comments
-- **US-MVP 10**: As the creator of a new type system, I want to write my own custom transformer.
+- **US-MVP 10**: As a developer, I want to write my own custom transformer by following a guide.
 - TDB

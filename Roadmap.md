@@ -1,7 +1,7 @@
 ## Design/Setting Up
 - [x] Explore different ways to provide type information in JavaScript programs.
-- [x] Describe high level goals, motivation and use cases.
-- [x] Create high level design.
+- [x] Describe high-level goals, motivation and use cases.
+- [x] Create a high-level design.
 - [x] Write user stories.
 - [x] Add project LICENSE.
 - [x] Set up contributing guidelines.

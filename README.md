@@ -35,7 +35,7 @@ The idea behind this project was originally born out of a previous attempt to st
 
 To compile anything to WebAssembly we need to provide type information, in other words - we need to state the **type** of variables, parameters and return statements. And since JavaScript is a dynamically typed language, we need to provide this information using some sort some external type system, like for instance TypeScript or Flow. After some own experiments where I managed to compile a few basic Flow examples, I discovered [AssemblyScript](https://github.com/AssemblyScript/assemblyscript). A TypeScript to WebAssembly compiler that is under active development and which supports most of TypeScript's AOT-compatible syntax. Finally, a bridge between JavaScript and WebAssembly!
 
-This helps with our first problem, but not everyone is using TypeScript. By solving our second problem and providing a way to transform code between different "type systems", we could allow a larger part of the JavaScript community to compile programs to WebAssembly, by using TypeScript as an intermediate representation. 
+This helps, but not everyone is using TypeScript. By solving our second problem and providing a way to transform code between different type systems, we could allow a larger part of the JavaScript community to compile programs to WebAssembly, by using TypeScript as an intermediate representation. 
 
 This has some other benefits too. Since TypeScript is the most popular type system at the moment it's also reasonable to believe that some projects might want to migrate from Flow to Typescript (which has recently been happening in projects like [Jest](https://github.com/facebook/jest/issues/7807) and [Yarn](https://github.com/yarnpkg/yarn/issues/6953)). Others might want to move away from JSDoc comments to "real" static types, or simply cater to the needs of both TypeScript and Flow users by providing multiple definition files.
 
@@ -118,3 +118,9 @@ The [main repo](https://github.com/esmbly/esmbly) uses a monorepo approach. This
 - [Runtime type information for JavaScript](https://medium.com/fhinkel/runtime-type-information-for-javascript-b134faac3c0a)
 - [Google: Type Profile Design Doc](https://docs.google.com/document/d/1JY7pUCAk8gegyi6UkIdln6j_AeJqQucZg92advaMJY4/edit#heading=h.xgjl2srtytjt)
 - [Why is Babel a monorepo?](https://github.com/babel/babel/blob/master/doc/design/monorepo.md)
+
+## Notes for peer reviewers
+- The above will be presented in a more [formal way as the project progresses](https://docs.google.com/document/d/1zvmoFoqnJPgmv0EqRN75X5r61bgl-oOZWzF1m0GjDnk/edit).
+- The project scope is initially defined by the [MVP user stories](Stories.md) and the [project roadmap](Roadmap.md).
+- Objectives are listed in the [project roadmap](Roadmap.md).
+- Feel free to open an issue, or even submit a PR if you'd like.

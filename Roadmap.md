@@ -12,7 +12,8 @@
 - [x] Define project roadmap.
 - [x] Create project icon/logo.
 
-## [Prototype](https://github.com/orgs/esmbly/projects/1)
+## Prototype
+Project board: https://github.com/orgs/esmbly/projects/1
 - [ ] Write examples.
 - [ ] Implement `@esmbly/cli`.
 - [ ] Implement `@esmbly/core`.

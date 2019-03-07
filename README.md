@@ -1,5 +1,22 @@
-# Design
-This repo contains the initial high-level design for [esmbly](https://github.com/esmbly/esmbly), a composable transpiler infrastructure for working with statically typed JavaScript and WebAssembly.
+# `Design`
+<p align="center">
+  <br>
+  <a href="https://github.com/esmbly/">
+    <img src="./media/icon.svg" width="200"/>
+  </a>
+</p>
+
+<p align="center">
+  This repo contains the initial high-level design for <a href="https://github.com/esmbly/esmbly">esmbly</a>, a composable transpiler infrastructure for working with statically typed JavaScript and WebAssembly.
+</p>
+
+<p align="center">
+  <a title="MIT License" href="LICENSE">
+    <img src="https://img.shields.io/github/license/gridsome/gridsome.svg?style=flat-square&label=License&colorB=6cc24a">
+  </a>
+  <br>
+  <br>
+</p>
 
 ## Introduction
 Statically typed JavaScript has become increasingly popular over the past few years. [The State of JavaScript Survey 2018](https://2018.stateofjs.com/) shows that almost half of the responding developers have used TypeScript and that they are excited about using it again (with Flow being the runner up). It seems like static types are not going anywhere soon.
@@ -10,8 +27,9 @@ This project aims to explore different ways of collecting, transforming and util
 
 ## Motivation
 First of all, the motivation behind this project originates from two different, but highly related problems:
-1. WebAssembly runs on the web - but it's not very accessible from a web developer perspective.
-2. The JavaScript ecosystem offers several different ways of providing type information. How can we extract and utilize this information, and how do we migrate between different type systems?
+> 1. WebAssembly runs on the web - but it's not very accessible from a web developer perspective.
+
+> 2. The JavaScript ecosystem offers several different ways of providing type information. How can we extract and utilize this information, and how do we migrate between different type systems?
 
 The idea behind this project was originally born out of a previous attempt to study WebAssembly performance. I looked at how WebAssembly execution times and memory usage compares to JavaScript for a few use cases identified by the [WebAssembly Community Group](https://webassembly.org/docs/use-cases/). With limited knowledge about C, I quickly ran into problems. I was not able to write programs that were advanced enough to represent any real-life use cases and ended up with very basic examples. I tried using a framework to introduce more advanced functionality but soon realized that such an approach could lead to invalid conclusions. After a few failed attempts to finish the project, I started thinking - what if I could take C out of the equation and generate WebAssembly binaries directly from a program written in JavaScript?
 

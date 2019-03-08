@@ -1,20 +1,20 @@
 # Roadmap
 
-## Design/Setting Up [Current phase]
+## Design/Setting Up
 - [x] Explore different ways to provide type information in JavaScript programs.
 - [x] Describe high-level goals, motivation and use cases.
 - [x] Create a high-level design.
 - [x] Write user stories.
 - [x] Add project LICENSE.
 - [x] Set up contributing guidelines.
-- [ ] Set up monorepo.
-- [ ] Set up the development environment (Build tools, Linting, Testing, CI).
+- [x] Set up monorepo.
+- [x] Set up the development environment (Build tools, Linting, Testing, CI).
 - [x] Define project roadmap.
 - [x] Create project icon/logo.
 
-## Prototype
+## Prototype [Current phase]
 Project board: https://github.com/orgs/esmbly/projects/1
-- [ ] Write examples.
+- [x] Write examples.
 - [ ] Implement `@esmbly/cli`.
 - [ ] Implement `@esmbly/core`.
 - [ ] Implement `@esmbly/output`.

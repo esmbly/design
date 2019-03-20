@@ -103,7 +103,7 @@ The [main repo](https://github.com/esmbly/esmbly) uses a monorepo approach. This
     |-- cli .................... Command line interface
     |-- core ................... Core functionality
     |-- parser ................. Generate AST
-    |-- output ................. Responsible for printing to the console
+    |-- printer ................ Responsible for printing to the console
     |-- transformer-v8 ......... V8 transformer
     |-- transformer-flow ....... Flow transformer
     |-- transformer-jsdoc ...... JSDoc transformer

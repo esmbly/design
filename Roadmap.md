@@ -15,13 +15,13 @@
 ## Prototype [Current phase]
 Project board: https://github.com/orgs/esmbly/projects/1
 - [x] Write examples.
-- [ ] Implement `@esmbly/cli`.
-- [ ] Implement `@esmbly/core`.
-- [ ] Implement `@esmbly/output`.
-- [ ] Implement `@esmbly/parser`.
-- [ ] Implement `@esmbly/utils`.
+- [x] Implement `@esmbly/cli`.
+- [x] Implement `@esmbly/core`.
+- [x] Implement `@esmbly/output`.
+- [x] Implement `@esmbly/parser`.
+- [x] Implement `@esmbly/utils`.
 - [ ] Implement [prototype user stories](Stories.md/#prototype-stories).
-- [ ] Basic testing.
+- [x] Basic testing.
 
 ## Minimum Viable Product
 - [ ] Implement [mvp user stories](Stories.md/#mvp-stories).

@@ -13,8 +13,8 @@
   */
 function padLeft(str, maxLength) {
   let s = str;
-  while(s.length < maxLength) {
-    s = fill + s;
+  while (s.length < maxLength) {
+    s = ` ${s}`;
   }
   return s;
 }
@@ -27,8 +27,8 @@ function padLeft(str, maxLength) {
  */
 function padRight(str, maxLength) {
   let s = str;
-  while(s.length < maxLength) {
-    s = s + fill;
+  while (s.length < maxLength) {
+    s = `${s} `;
   }
   return s;
 }
@@ -43,7 +43,7 @@ function isPadded(str) {
 }
 
 module.exports = {
+  isPadded,
   padLeft,
   padRight,
-  isPadded
-}
+};

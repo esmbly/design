@@ -5,7 +5,7 @@
  * and transform it to TypeScript using the V8 transformer
  */
 
-function padLeft(str, maxLength) {
+function padLeft(str: string, maxLength: number): string {
   let s = str;
   while (s.length < maxLength) {
     s = ` ${s}`;
@@ -13,7 +13,7 @@ function padLeft(str, maxLength) {
   return s;
 }
 
-function padRight(str, maxLength) {
+function padRight(str: string, maxLength: number): string {
   let s = str;
   while (s.length < maxLength) {
     s = `${s} `;
@@ -21,7 +21,7 @@ function padRight(str, maxLength) {
   return s;
 }
 
-function isPadded(str) {
+function isPadded(str: string): boolean {
   return str.length !== str.trim().length;
 }
 

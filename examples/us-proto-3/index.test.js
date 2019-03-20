@@ -8,6 +8,7 @@ describe('String utils', () => {
       expect(utils.padRight('test', 2)).toEqual('test');
     });
   });
+
   describe('padLeft', () => {
     it('pads the string to the left', () => {
       expect(utils.padLeft('test', 6)).toEqual('  test');
@@ -15,6 +16,7 @@ describe('String utils', () => {
       expect(utils.padLeft('test', 2)).toEqual('test');
     });
   });
+
   describe('isPadded', () => {
     it('returns true if the string is padded', () => {
       const rightPadded = utils.padRight('test', 5);
@@ -22,6 +24,7 @@ describe('String utils', () => {
       expect(utils.isPadded(rightPadded)).toEqual(true);
       expect(utils.isPadded(leftPadded)).toEqual(true);
     });
+
     it('returns false if the string is not padded', () => {
       expect(utils.isPadded('test')).toEqual(false);
     });

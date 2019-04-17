@@ -101,8 +101,7 @@ The [main repo](https://github.com/esmbly/esmbly) uses a monorepo approach. This
 ```
 |-- packages
     |-- cli .................... Command line interface
-    |-- core ................... Core functionality
-    |-- parser ................. Generate AST
+    |-- core ................... Core functionality (Generate AST, Run transformers)
     |-- printer ................ Responsible for printing to the console
     |-- transformer-v8 ......... V8 transformer
     |-- transformer-flow ....... Flow transformer

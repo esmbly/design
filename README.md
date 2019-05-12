@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  This repo contains the initial high-level design for <a href="https://github.com/esmbly/esmbly">esmbly</a>, a composable transpiler infrastructure for working with statically typed JavaScript and WebAssembly.
+  This repo contains the initial high-level design for <a href="https://github.com/esmbly/esmbly">Esmbly</a>, a composable transpiler infrastructure for working with statically typed JavaScript and WebAssembly.
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ This has some other benefits too. Since TypeScript is the most popular type syst
 - Lower the barrier for JavaScript developers that want to start experimenting and prototyping with WebAssembly by taking advantage of already existing type information in a code base.
 
 ## What's different from Babel?
-Babel is great, and **esmbly** does, in fact, plan to use some parts of the babel infrastructure, like the [@babel/parser](https://babeljs.io/docs/en/next/babel-parser) and [@babel/types](https://babeljs.io/docs/en/next/babel-types.html). The difference is however that while babel is mainly focused on converting ES2015+ (as well as other syntaxes like Flow, TypeScript, JSX etc) into a backwards compatible version of JavaScript - **esmbly** focuses on collecting, transforming and utilizing **type information**. Like for instance moving from `JavaScript -> TypeScript -> WebAssembly` or migrating from JSDoc comments to TypeScript.
+Babel is great, and **Esmbly** does, in fact, plan to use some parts of the babel infrastructure, like the [@babel/parser](https://babeljs.io/docs/en/next/babel-parser) and [@babel/types](https://babeljs.io/docs/en/next/babel-types.html). The difference is however that while babel is mainly focused on converting ES2015+ (as well as other syntaxes like Flow, TypeScript, JSX etc) into a backwards compatible version of JavaScript - **esmbly** focuses on collecting, transforming and utilizing **type information**. Like for instance moving from `JavaScript -> TypeScript -> WebAssembly` or migrating from JSDoc comments to TypeScript.
 
 ## Use cases
 Note: Check out [the user stories](Stories.md) for more use cases.
@@ -62,7 +62,7 @@ Note: Check out [the user stories](Stories.md) for more use cases.
 
 
 ## Transformers
-An **esmbly** transformer is basically a module that receives an AST which it then modifies (like for instance turning Flow annotations into TypeScript). The idea is that you should be able to compose your own chain of transformations, e.g. first using the JSDoc transformer for transforming `JSDoc -> TypeScript` and then the WebAssembly transformer to output WebAssembly. 
+An **Esmbly** transformer is basically a module that receives an AST which it then modifies (like for instance turning Flow annotations into TypeScript). The idea is that you should be able to compose your own chain of transformations, e.g. first using the JSDoc transformer for transforming `JSDoc -> TypeScript` and then the WebAssembly transformer to output WebAssembly. 
 
 #### Initial ideas
 - **Flow**: Transforming from Flow to TypeScript (and possibly offering other targets/utilities as well).

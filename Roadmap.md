@@ -12,7 +12,7 @@
 - [x] Define project roadmap.
 - [x] Create project icon/logo.
 
-## Prototype [Current phase]
+## Prototype
 Project board: https://github.com/orgs/esmbly/projects/1
 - [x] Write examples.
 - [x] Implement `@esmbly/cli`.
@@ -20,18 +20,18 @@ Project board: https://github.com/orgs/esmbly/projects/1
 - [x] Implement `@esmbly/output`.
 - [x] Implement `@esmbly/parser`.
 - [x] Implement `@esmbly/utils`.
-- [ ] Implement [prototype user stories](Stories.md/#prototype-stories).
+- [x] Implement [prototype user stories](Stories.md/#prototype-stories).
 - [x] Basic testing.
 
-## Minimum Viable Product
+## Minimum Viable Product [Current phase]
 - [ ] Implement [mvp user stories](Stories.md/#mvp-stories).
 - [ ] Add extensive unit/integration testing.
 - [ ] Investigate cross platform/environment compatibility.
-- [ ] Documentation and guides.
+- [x] Documentation and guides.
 
 ## Post MVP
 - [ ] Website.
-- [ ] **esmbly** playground/integration with [WebAssembly Studio](http://webassembly.studio).
+- [x] **esmbly** playground/integration with [WebAssembly Studio](http://webassembly.studio).
 - [ ] Enhanced error handling.
 - [ ] Typescript transformer (in other words transforming **from** TypeScript).
 - TBD

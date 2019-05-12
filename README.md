@@ -62,7 +62,7 @@ Note: Check out [the user stories](Stories.md) for more use cases.
 
 
 ## Transformers
-An **esmbly** transformer is basically a module that receives an AST which it then modifies (like for instance turning Flow annotations into TypeScript) and returns. Since each transformer both inputs and outputs an AST, you can compose your own chain of transformations.
+An **esmbly** transformer is basically a module that receives an AST which it then modifies (like for instance turning Flow annotations into TypeScript). The idea is that you should be able to compose your own chain of transformations, e.g. first using the JSDoc transformer for transforming `JSDoc -> TypeScript` and then the WebAssembly transformer to output WebAssembly. 
 
 #### Initial ideas
 - **Flow**: Transforming from Flow to TypeScript (and possibly offering other targets/utilities as well).
@@ -88,13 +88,7 @@ _Note: This transformation would happen in two steps, using two separate transfo
 Each input file is parsed and transformed into an AST which is then passed along to the first transformer in line.
 
 **3. Transformers**:   
-The transformer receives the AST and performs the required transformations. When a transformer is finished, it passes the transformed AST along to the next transformer in line.
-
-**4. Output**:   
-When all transformers are done, the AST is turned back into code. Depending on the configuration, the output could be JavaScript, TypeScript or even WebAssembly Binaries.
-
-### Architecture overview
-![Architecture](media/architecture.svg "Architecture")
+The transformer receives the AST and performs the required transformations. It also creates output files if it matches any of the specified output formats. When a transformer is finished, the transformed AST is passed along to the next transformer in line.
 
 ## Repo structure 
 The [main repo](https://github.com/esmbly/esmbly) uses a monorepo approach. This makes it easier to make (and test) changes across packages.
@@ -117,9 +111,3 @@ The [main repo](https://github.com/esmbly/esmbly) uses a monorepo approach. This
 - [Runtime type information for JavaScript](https://medium.com/fhinkel/runtime-type-information-for-javascript-b134faac3c0a)
 - [Google: Type Profile Design Doc](https://docs.google.com/document/d/1JY7pUCAk8gegyi6UkIdln6j_AeJqQucZg92advaMJY4/edit#heading=h.xgjl2srtytjt)
 - [Why is Babel a monorepo?](https://github.com/babel/babel/blob/master/doc/design/monorepo.md)
-
-## Notes for peer reviewers
-- The above will be presented in a more [formal way as the project progresses](https://docs.google.com/document/d/1zvmoFoqnJPgmv0EqRN75X5r61bgl-oOZWzF1m0GjDnk/edit).
-- The project scope is initially defined by the [MVP user stories](Stories.md) and the [project roadmap](Roadmap.md).
-- Objectives are listed in the [project roadmap](Roadmap.md).
-- Feel free to open an issue, or even submit a PR if you'd like.

@@ -101,6 +101,7 @@ The [main repo](https://github.com/esmbly/esmbly) uses a monorepo approach. This
     |-- transformer-flow ....... Flow transformer
     |-- transformer-jsdoc ...... JSDoc transformer
     |-- transformer-wasm ....... WebAssembly transformer
+    |-- types .................. Shared type definitions
     |-- utils .................. Shared utilities
 
 ```
